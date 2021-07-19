@@ -1,0 +1,537 @@
+body{
+    background-color: black;
+}
+
+.header h1{
+    color: red;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    margin-top: 10px;
+    font-family: sans-serif;
+    font-size: 30px;
+}
+
+.header{
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+.header .part2{
+    background-image: linear-gradient(to left,red,black);
+    height: 40px;
+    margin-top: 10px;
+}
+
+.bodySection{
+    display: grid;
+    grid-template-columns: 25% 75%;
+}
+
+.home.active span{
+    color: red;
+}
+
+.hide{
+    display: none;
+}
+
+/* .home{
+    display: none;
+} */
+
+.home span{
+    color: white;
+}
+
+.menu{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    /* grid-template-rows: 1000px; */
+    min-height: 740px;
+    margin-top: 5px;
+}
+
+.homeText, .searchText{
+    padding-left: 10px;
+}
+
+.arrow{
+    float: right;
+    padding-right: 10px;
+}
+
+.home{
+    padding-top: 20px;
+    border-bottom: 1px solid white;
+    cursor: pointer;
+}
+
+
+.menuGrid2{
+    display: grid;
+    grid-template-rows: 60px 60px;
+    height: auto;
+    border-right: 1px solid white;
+}
+
+.search span{
+    color: white;
+}
+
+.search.active span {
+    color: red;
+}
+
+.search{
+    padding-top: 20px;
+    cursor: pointer;
+}
+
+.hide{
+    display: none;
+}
+
+.homeSection{
+    color:white;
+    height: auto;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.trending{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+h3{
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 100;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.overlay{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.movieText{
+    position: absolute;
+    bottom: 0px;
+    color: white;
+    width: 780px;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+    font-family: sans-serif;
+}
+
+.movie{
+    width: 780px;
+}
+
+.searchSection{
+    color: white;
+    background-image: linear-gradient(to bottom,red,black);
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-family: sans-serif;
+    margin-top: 5px;
+    padding-top: 0px;
+    margin-right: 200px;
+    margin-left: 10px;
+}
+
+.searchSection, h2{
+    text-align: center;
+    margin-top: 5px;
+    padding-top: 0px;
+}
+
+.keywordBox,.categoryBox{
+    display: flex;
+    flex-direction: flex-start;
+    width: 500px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+    align-items: center;
+}
+
+.keyword{
+    width: 400px;
+    height: 25px;
+    border-radius: 4px;
+}
+
+.buttonBox{
+    display: grid;
+    grid-template-columns: 75px 75px;
+    width: 500px;
+    grid-column-gap: 50px;
+    margin-bottom: 50px;
+    padding-left: 300px;
+}
+
+.category{
+    width: 175px;
+    height: 30px;
+    border-radius: 4px;
+}
+
+.required:after {
+    content:" *";
+    color: red;
+}
+
+.button{
+    background-color: black;
+    color: white;
+    height: 30px;
+    border: 0px solid;
+    border-radius: 4px;
+}
+
+.button:hover{
+    background-color: red;
+}
+
+.searchResultsHidden{
+    display: none;
+}
+
+.searchResults{
+    color: white;
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+h3{
+    /* display: flex; */
+    justify-content: flex-start;
+    color: white;
+    align-items: flex-start;
+}
+
+.searchResultBox{
+    width: 100%;
+}
+
+.noResultsBox{
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding-right: 200px;
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 16px;
+}
+
+.showingResultsBox{
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 18px;
+    padding-left: 10px;
+}
+
+.resultImage{
+    width: 185px;
+    height: 250px;
+    padding-left: 10px;
+}
+
+.resultText{
+    font-family: sans-serif;
+    margin-right: 200px;
+}
+
+.resultText h2{
+    text-align: initial;
+    margin-top: initial;
+}
+
+.resultText p{
+    font-weight: 100;
+    margin-bottom: 0px;
+}
+
+.resultText div{
+    font-weight: 100;
+    margin-bottom: 20px;
+    overflow-y: hidden;
+    text-overflow: ellipsis;
+    max-height: 110px;
+    
+}
+
+.searchResults{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    margin-right: 200px;
+    border-left: 8px solid red;
+    align-items: center;
+    grid-template-rows: 300px;
+}
+
+.resultratings{
+    font-size: 12px;
+}
+
+.resultButton{
+    height: 30px;
+    width: 95px;
+    border-radius: 4px;
+    background-color: red;
+    color: white;
+    border: 0px;
+    font-family: sans-serif;
+}
+
+.resultButton:hover{
+    background-color: grey;
+}
+
+span.star, span.starText{
+    color:red;
+}
+
+span.voteCount{
+    padding-left: 2px;
+}
+
+
+.footer{
+    background-color: darkred;
+    position: absolute;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+}
+
+/* The Modal (background) */
+/* .modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+    max-height: 100%;
+} */
+
+.modal{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    width: 1000px;
+    max-width: 100%;
+    height: 600px;
+    max-height: 100%;
+}
+
+.modalContent{
+    /* cover the modal */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    /* spacing as needed */
+    padding: 20px 50px 20px 20px;
+
+    /* let it scroll */
+    overflow: auto;
+    color: red;
+    background-color:lightgrey;
+}
+
+/* .modalContent{
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    
+    padding: 20px 50px 20px 20px;
+
+    
+    overflow: auto;
+    color: red;
+    background-color:lightgrey;
+} */
+
+/* Modal Content */
+/* .modalContent {
+    background-color:lightgrey;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+    color: red;
+} */
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.moreResultImage{
+    width: 780px;
+    padding-left: 125px;
+}
+
+.resultDescriptionDiv{
+    font-family: sans-serif;
+    font-weight: 100;
+    padding-left: 30px;
+    color:black;
+}
+
+h2.h2ShowMore{
+    color: black;
+    text-align: left;
+    /* padding-left: 30px; */
+    font-weight: 100;
+    font-family: sans-serif;
+    display: inline-block;
+} 
+
+a.infoSymbol{
+    color: red;
+    padding-left: 10px;
+    text-decoration: none;
+}
+
+.resultYearGenres{
+    /* padding-left: 30px; */
+    color: black;
+    font-family: sans-serif;
+    font-weight: 100;
+}
+
+.resultMoveDescriptionDiv{
+    padding-top: 10px;
+    padding-right: 38px;
+}
+
+.spokenLanguages{
+    font-style: italic;
+    font-weight: 500;
+}
+
+.pElement{
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+.pReviewsElement{
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.castParentGrid{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    padding-right: 180px;
+}
+
+.castDiv{
+    width: 185px;
+}
+
+.castImage{
+    width: 185px;
+    margin-top: 20px;
+}
+
+.castDescriptionDiv{
+    text-align: center;
+}
+
+.castNameP{
+    font-weight: bold;
+    font-size: 15px;
+    font-family: sans-serif;
+    margin-bottom: 0px;
+}
+
+.castNameP2{
+    font-size: 15px;
+    font-family: sans-serif;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.resultText{
+    margin-left: 10px;
+}
+
+span.usernameSpan{
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+span.onCreatedAtSpan{
+    font-size: 13px;
+}
+
+.reviewDiv{
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.reviewDescriptionP{
+    overflow-y: hidden;
+    text-overflow: ellipsis;
+    max-height: 55px;
+    margin-top: 0px;
+}
+
+.userNameOnCreatedAtDiv{
+    margin-bottom: 12.5px;
+}

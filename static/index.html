@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="/static/style.css">
+    </head>
+    <body>
+        <div class="header">
+            <div class="part1">
+                <h1>THE MOVIE DB</h1>
+            </div>
+            <div class="part2">
+                <!--linear gradient-->
+            </div>
+        </div>
+        <div class=bodySection>
+            <div class="menu">
+                <div class="menuGrid1">
+                </div>
+                <div class="menuGrid2">
+                    <div id="home" class="home active" onclick="activateWindow(id)">
+                        <span class="homeText">Home</span>
+                        <span class="arrow">&#10230;</span>
+                    </div>
+                    <div id="search" class="search" onclick="activateWindow(id)">
+                        <span class="searchText">Search</span>
+                        <span class="arrow">&#10230;</span>
+                    </div>
+                </div>
+            </div>
+            <div id="homeSection" class="homeSection">
+                <script type="text/javascript" src="/static/homesection.js"></script>
+                <!--Trending Movies-->
+                <h3>Trending Movies</h3>
+                <div id="movie1" class="trending">
+                    <div class="overlay">
+                        <img id="movieImage1" src="/static/movie-placeholder.jpg" alt="Image for trending movie" class="movie">
+                        <div id="movieText1" class="movieText">Title of movie</div>
+                    </div>
+                </div>
+                <div id="movie2" class="trending">
+                    <div class="overlay">
+                        <img id="movieImage2" src="/static/movie-placeholder.jpg" alt="Image for trending movie" class="movie">
+                        <div id="movieText2" class="movieText">Title of movie</div>
+                    </div>
+                </div>
+                <div id="movie3" class="trending">
+                    <div class="overlay">
+                        <img id="movieImage3" src="/static/movie-placeholder.jpg" alt="Image for trending movie" class="movie">
+                        <div id="movieText3" class="movieText">Title of movie</div>
+                    </div>
+                </div>
+                <div id="movie4" class="trending">
+                    <div class="overlay">
+                        <img id="movieImage4" src="/static/movie-placeholder.jpg" alt="Image for trending movie" class="movie">
+                        <div id="movieText4" class="movieText">Title of movie</div>
+                    </div>
+                </div>
+                <div id="movie5" class="trending">
+                    <div class="overlay">
+                        <img id="movieImage5" src="/static/movie-placeholder.jpg" alt="Image for trending movie" class="movie">
+                        <div id="movieText5" class="movieText">Title of movie</div>
+                    </div>
+                </div>
+                <!--Airing Today-->
+                <h3>TV Shows On-Air Today</h3>
+                <div id="show1" class="trending">
+                    <div class="overlay">
+                        <img id="showImage1" src="/static/movie-placeholder.jpg" alt="Image for airing show" class="movie">
+                        <div id="showText1" class="movieText">Title of show</div>
+                    </div>
+                </div>
+                <div id="show2" class="trending">
+                    <div class="overlay">
+                        <img id="showImage2" src="/static/movie-placeholder.jpg" alt="Image for airing show" class="movie">
+                        <div id="showText2" class="movieText">Title of show</div>
+                    </div>
+                </div>
+                <div id="show3" class="trending">
+                    <div class="overlay">
+                        <img id="showImage3" src="/static/movie-placeholder.jpg" alt="Image for airing show" class="movie">
+                        <div id="showText3" class="movieText">Title of show</div>
+                    </div>
+                </div>
+                <div id="show4" class="trending">
+                    <div class="overlay">
+                        <img id="showImage4" src="/static/movie-placeholder.jpg" alt="Image for airing show" class="movie">
+                        <div id="showText4" class="movieText">Title of show</div>
+                    </div>
+                </div>
+                <div id="show5" class="trending">
+                    <div class="overlay">
+                        <img id="showImage5" src="/static/movie-placeholder.jpg" alt="Image for airing show" class="movie">
+                        <div id="showText5" class="movieText">Title of show</div>
+                    </div>
+                </div>
+            </div>
+            <div id="searchSectionBox" class="searchSectionBox hide">
+                <div id="searchSection" class="searchSection">
+                    <h2>Search</h2>
+                    <div class="keywordBox">
+                        <span class="required">Keyword</span>
+                        <input class="keyword" type="text" id="keyword">
+                    </div>
+                    <div class="categoryBox">
+                        <span class="required">Category</span>
+                        <select id="category" class="category">
+                            <option value=""></option>
+                            <option value="Movies">Movies</option>
+                            <option value="TV Shows">TV Shows</option>
+                            <option value="Movies and TV Shows">Movies and TV Shows</option>
+                        </select>
+                    </div>
+                    <div class="buttonBox">
+                        <button type="button" class="button" onclick="search()">Search</button>
+                        <button type="button" class="button" onclick="clearInput()">Clear</button>
+                    </div>
+                </div>
+                <!-- <div id="searchResults" class="searchResults">
+                    <img src="static/movie-placeholder.jpg" alt="Movie Picture" class="resultImage">
+                    <div class="resultText">
+                        <h2>Title of Movie</h2>
+                        <p class="resultGenre">Genre of movie</p>
+                        <div class="resultratings">
+                            <span class="star">★</span>
+                            <span class="starText">4.15/5</span>
+                            <span class="star">☆</span>
+                            <span class="halfStar">★</span>
+                            <span>10000 votes</span>
+                        </div>
+                        <div class="resultDescription">This is movie description.......</div>
+                        <button type="button" id="showMoreButton" class="resultButton">Show more</button>
+                    </div>
+                    The modal
+                    <div id="resultModal" class="modal">
+                        Modal content
+                        <div class="modalContent">
+                            <span id="closeSpan" class="close">&times;</span>
+                            <p>This is a test</p>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+            <!-- <footer id="footer" class="footer">
+            </footer> -->
+        </div>
+        <script type="text/javascript" src="/static/app.js"></script>
+        <script type="text/javascript" src="/static/modal.js"></script>
+    </body>
+</html>
